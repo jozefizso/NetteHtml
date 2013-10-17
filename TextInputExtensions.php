@@ -13,3 +13,11 @@ TextInput::extensionMethod('addPlaceholder',
         return $that;
     }
 );
+
+TextInput::extensionMethod('setAutofocus',
+    function (TextInput $that, $autofocus = TRUE)
+    {
+        $that->setAttribute('autofocus', $autofocus);
+        return $that;
+    }
+);
